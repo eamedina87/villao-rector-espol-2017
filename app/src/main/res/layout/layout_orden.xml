@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/oden_comedor"
+        android:text="Comedor Fiec"
+        android:background="@color/colorFiec"
+        android:drawableLeft="@drawable/ic_action_name"
+        style="@style/ComedorItem"
+        android:onClick="onComedorSelected"
+        />
+
+    <include layout="@layout/item_menu"
+        />
+
+    <Button
+        android:id="@+id/orden_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Orden"
+        android:onClick="confirmOrder"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorFiec"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

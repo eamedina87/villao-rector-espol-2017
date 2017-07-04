@@ -1,0 +1,49 @@
+[
+    {
+      "id":1,
+      "menu":[
+        {
+          "sopa":"chupe de pescado",
+        "segundo":"arroz con menestra y carne",
+        "jugo":"jugo de naranja"},
+        {
+          "sopa":"caldo de bolas",
+          "segundo":"arroz con puré y carne",
+          "jugo":"jugo de naranjilla"},
+        {
+          "sopa":"sopa de pollo",
+          "segundo":"chaulafán",
+          "jugo":"jugo de mora"}
+      ]
+    },
+    {
+      "id":2,
+      "menu":[
+        {"sopa":"sopa de albóndigas",
+          "segundo":"tallarín con carne",
+          "jugo":"jugo de melón"},
+        {"sopa":"menestrón de carne",
+          "segundo":"encocado de pescado",
+          "jugo":"jugo de tamarindo"},
+        {
+          "sopa":"sopa de lentejas",
+          "segundo":"enrollado de atún",
+          "jugo":"jugo de sandía"}
+        ]
+    },
+    {
+      "id":3,
+      "menu":[
+        {"sopa":"crema de legumbres",
+          "segundo":"churrasco",
+          "jugo":"jugo de naranja"},
+        {"sopa":"sopa de habas",
+          "segundo":"ensalada de atún",
+          "jugo":"jugo de frutilla"},
+        {
+          "sopa":"sopa de torreja",
+          "segundo":"seco de pollo",
+          "jugo":"limonada"}
+      ]
+    }
+  ]

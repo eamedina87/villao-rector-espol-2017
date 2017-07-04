@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ec.medinamobile.comedoresdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".principal.PrincipalActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".comedores.main.MainActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".principal.PrincipalActivity"
+            >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".principal.PrincipalActivity"/>
+        </activity>
+        <activity android:name=".comedores.menu.MenuActivity"
+            android:parentActivityName=".comedores.main.MainActivity"
+            android:launchMode="singleTop">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".comedores.main.MainActivity"/>
+
+        </activity>
+        <activity android:name=".comedores.order.OrderActivity"
+            android:parentActivityName=".comedores.menu.MenuActivity"
+            android:launchMode="singleTop">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".comedores.menu.MenuActivity"/>
+
+        </activity>
+        <activity android:name=".comedores.calificar.CalificarActivity"
+            android:parentActivityName=".comedores.order.OrderActivity">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".comedores.order.OrderActivity"/>
+
+        </activity>
+        <activity android:name=".transporte.TransporteMainActivity"
+            android:parentActivityName=".principal.PrincipalActivity">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".principal.PrincipalActivity"/>
+
+        </activity>
+
+        <activity android:name=".transporte.TransporteDetailActivity"
+            android:parentActivityName=".transporte.TransporteMainActivity">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".transporte.TransporteMainActivity"/>
+
+        </activity>
+    </application>
+
+</manifest>

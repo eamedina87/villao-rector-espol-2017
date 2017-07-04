@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".comedores.main.MainActivity">
+
+    <TextView
+        android:id="@+id/parada_tecnologias"
+        android:text="Parada Tecnologías"
+        android:background="@color/colorPrincipal"
+        android:drawableLeft="@drawable/ic_parada_tecnologias"
+        style="@style/ComedorItem"
+        android:onClick="onParadaSelected"
+        />
+
+    <TextView
+        android:id="@+id/parada_rectorado"
+        android:text="Parada Rectorado"
+        android:background="@color/colorFiec"
+        android:drawableLeft="@drawable/ic_action_name"
+        style="@style/ComedorItem"
+        android:onClick="onParadaSelected"
+        />
+
+    <TextView
+        android:id="@+id/parada_fen"
+        android:text="Parada FEN"
+        android:drawableLeft="@drawable/ic_parada_fen"
+        android:background="@color/colorMecanica"
+        style="@style/ComedorItem"
+        android:onClick="onParadaSelected"
+        />
+
+</LinearLayout>
