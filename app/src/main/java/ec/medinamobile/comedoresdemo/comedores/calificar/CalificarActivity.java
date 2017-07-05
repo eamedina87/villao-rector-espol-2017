@@ -16,6 +16,7 @@ import ec.medinamobile.comedoresdemo.R;
 import ec.medinamobile.comedoresdemo.Utils;
 import ec.medinamobile.comedoresdemo.comedores.entities.Comida;
 import ec.medinamobile.comedoresdemo.comedores.main.MainActivity;
+import ec.medinamobile.comedoresdemo.principal.PrincipalActivity;
 
 /**
  * Created by Erick on 4/7/17.
@@ -68,8 +69,8 @@ public class CalificarActivity extends AppCompatActivity {
         jugo.setText(comida.getJugo());
         Button btnOrder = (Button)findViewById(R.id.orden_btn);
         btnOrder.setVisibility(View.GONE);
-        Button btn = (Button)findViewById(R.id.calificar_btn);
-        btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
+        //Button btn = (Button)findViewById(R.id.calificar_btn);
+        //btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
 
     }
 
@@ -83,7 +84,7 @@ public class CalificarActivity extends AppCompatActivity {
         } else {
             showMessage("¡Gracias por calificar el servicio!");
             this.finish();
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, PrincipalActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

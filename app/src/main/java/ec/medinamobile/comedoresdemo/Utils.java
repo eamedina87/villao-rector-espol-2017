@@ -10,7 +10,7 @@ import ec.medinamobile.comedoresdemo.R;
 import ec.medinamobile.comedoresdemo.comedores.order.OrderActivity;
 
 /**
- * Created by Supertel on 4/7/17.
+ * Created by Erick on 4/7/17.
  */
 
 public class Utils {

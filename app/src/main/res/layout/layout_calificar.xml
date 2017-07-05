@@ -48,6 +48,7 @@
         android:onClick="calificarOrden"
         android:text="Calificar"
         android:layout_marginTop="8dp"
+        android:textColor="@color/colorButton"
         app:layout_constraintTop_toBottomOf="@+id/calificar_comentario"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent" />

@@ -7,7 +7,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:src="@drawable/img_freddy_rector"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
         />
 
 
@@ -15,23 +19,27 @@
         style="@style/ComedorItem"
         android:text="Demo Restaurantes"
         android:drawableLeft="@drawable/ic_restaurante"
+        android:background="@color/colorPrincipal"
         android:onClick="verDemoRestaurantes"
-        android:background="@color/colorFiec"
+
+
         />
 
     <TextView
         style="@style/ComedorItem"
         android:text="Demo Transporte"
+
         android:onClick="verDemoTransporte"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorFiec"
         android:drawableLeft="@drawable/ic_transporte"
         />
 
     <TextView
         style="@style/ComedorItem"
         android:text="Propuestas"
+
         android:onClick="verPropuestas"
-        android:background="@color/colorAccent"
+        android:background="@color/colorMecanica"
         android:drawableLeft="@drawable/ic_propuestas"
         />
 

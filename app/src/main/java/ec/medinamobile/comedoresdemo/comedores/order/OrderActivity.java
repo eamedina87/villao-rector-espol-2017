@@ -70,7 +70,7 @@ public class OrderActivity extends AppCompatActivity {
         Button btn = (Button)findViewById(R.id.orden_btn);
         if (!isCodigoVisible){
             btn.setVisibility(View.VISIBLE);
-            btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
+            //btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
         } else {
             confirmOrder(btn);
         }
@@ -83,8 +83,8 @@ public class OrderActivity extends AppCompatActivity {
         view.setVisibility(View.GONE);
         LinearLayout codigoLayout = (LinearLayout)findViewById(R.id.orden_codigo_layout);
         codigoLayout.setVisibility(View.VISIBLE);
-        Button btn = (Button)findViewById(R.id.calificar_btn);
-        btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
+        //Button btn = (Button)findViewById(R.id.calificar_btn);
+        //btn.setTextColor(Utils.getBackgroudColor(this, comedorId));
     }
 
     public void calificarOrden(View view){

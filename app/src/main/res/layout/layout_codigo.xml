@@ -43,7 +43,7 @@
             android:text="Calificar Orden"
             android:onClick="calificarOrden"
             android:background="@android:color/transparent"
-            android:textColor="@color/colorFiec"
+            android:textColor="@color/colorButton"
             android:layout_gravity="center"
             />
 

@@ -17,6 +17,7 @@ import android.widget.Toast;
 import ec.medinamobile.comedoresdemo.R;
 import ec.medinamobile.comedoresdemo.Utils;
 import ec.medinamobile.comedoresdemo.comedores.main.MainActivity;
+import ec.medinamobile.comedoresdemo.principal.PrincipalActivity;
 
 /**
  * Created by Erick on 4/7/17.
@@ -47,12 +48,12 @@ public class TransporteDetailActivity extends AppCompatActivity{
     }
 
     private void setViews() {
-
+        getSupportActionBar().setTitle(Utils.getParadaName(paradaId));
         timer = (TextView)findViewById(R.id.transporte_tiempo);
         startCountdown(Utils.getRandomDuration());
-        ((TextView)findViewById(R.id.textView7)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
-        ((Button)findViewById(R.id.calificar_btn)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
-        ((Button)findViewById(R.id.enviar_btn)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
+        //((TextView)findViewById(R.id.textView7)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
+        //((Button)findViewById(R.id.calificar_btn)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
+        //((Button)findViewById(R.id.enviar_btn)).setBackgroundColor(Utils.getBackgroudColor(this, paradaId));
 
     }
 
@@ -97,7 +98,7 @@ public class TransporteDetailActivity extends AppCompatActivity{
 
             showMessage("¡Gracias por calificar el servicio!");
             this.finish();
-            Intent intent = new Intent(this, TransporteMainActivity.class);
+            Intent intent = new Intent(this, PrincipalActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

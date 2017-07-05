@@ -22,7 +22,7 @@
         android:text="Confirmar Orden"
         android:onClick="confirmOrder"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorFiec"
+        android:textColor="@color/colorButton"
         android:layout_gravity="center"
         />
 
