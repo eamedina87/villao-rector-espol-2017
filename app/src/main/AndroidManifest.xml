@@ -19,6 +19,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".propuestas.PropuestasActivity"
+            android:parentActivityName=".principal.PrincipalActivity"
+            >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".principal.PrincipalActivity"/>
+        </activity>
+
         <activity android:name=".comedores.main.MainActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".principal.PrincipalActivity"

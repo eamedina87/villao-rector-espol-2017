@@ -8,6 +8,7 @@ import android.view.View;
 
 import ec.medinamobile.comedoresdemo.R;
 import ec.medinamobile.comedoresdemo.comedores.main.MainActivity;
+import ec.medinamobile.comedoresdemo.propuestas.PropuestasActivity;
 import ec.medinamobile.comedoresdemo.transporte.TransporteMainActivity;
 
 /**
@@ -32,6 +33,6 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void verPropuestas(View view){
-
+        startActivity(new Intent(this, PropuestasActivity.class));
     }
 }
