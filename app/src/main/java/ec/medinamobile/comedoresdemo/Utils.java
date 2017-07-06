@@ -41,7 +41,7 @@ public class Utils {
         switch (comedorId){
             case 1: return "Parada Tecnologías";
             case 2: return "Parada Rectorado";
-            case 3: return "Parada FEN";
+            case 3: return "Parada FCSH";
         }
         return "";
     }
